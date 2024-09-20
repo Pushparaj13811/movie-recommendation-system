@@ -39,7 +39,7 @@ selected_movie_name = st.selectbox(
 
 if st.button("Recommend"):
     names, posters = recommend(selected_movie_name)
-    cols = st.columns(3)
+    cols = st.columns(5)
     for idx, col in enumerate(cols):
         if idx < len(names):
             with col:
